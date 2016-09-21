@@ -1,0 +1,81 @@
+@import "bourbon"
+@import "vars"
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+$main-color: #f39f18
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+
+
+.homesect
+	padding-top: 70px
+	background-color: #F9F9F9
+	position: relative
+	.section-head
+		margin-bottom: 80px
+		p
+			margin-top: 60px
+			a
+				font-family: "RalewayBold", $helvetica
+				&:hover
+					text-decoration: none
+		h2
+			text-align: center
+			position: relative
+			&::after
+				position: absolute
+				content: ''
+				height: 4px
+				background-color: $main-color
+				width: 165px
+				display: block
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%,0)
+	&::before
+		content: ''
+		height: 6px	
+		width: 100%
+		position: absolute
+		top: -6px
+		background-image: url(img/bah_1.png)		
+
+	.section-bottom
+		
+		background-color: #E5E5E5
+		padding: 50px 0
+		text-align: center 		
+
+.section-content	
+	min-height: 320px	
+
+
+
